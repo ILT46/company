@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+
+
+
+
+.menu{
+    background-color: black;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.menu-links{
+    float: right;
+}
+.menu-links a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 18px;
+
+}
+.menu-links a:hover{
+    color: orange;
+}
+
+
+
+
+
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( #DB7E7E , #FFC997);;
+    position: relative;
+    overflow: hidden;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+    text-align: center;
+    z-index: 5;
+}
+.header-content h1{
+    color: white;
+    font-size: 90px;
+    text-shadow: 10px 5px 5px brown;
+    width: 1000px;
+}
+.header-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.circle1{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    animation: up 6s linear infinite;
+}
+.circle2{
+    position: absolute;
+    top: -90px;
+    right: -80px;
+    animation: down 6s linear infinite;
+}
+.circle3{
+    position: absolute;
+    bottom: -80;
+    width: 33%;
+    animation: down 6s linear infinite;
+}
+.circle-bordered{
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    animation: transform 6s linear infinite;
+}
+.circle-dashed-border{
+    position: absolute;
+    top: 390px ;
+    left: 1000px;
+    animation: rotate 10s linear infinite;
+}
+.triangle{
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    animation: transform 6s linear infinite;
+}
+.octagon{
+    position: absolute;
+    top: 500px;
+    left: 750px;
+    animation: rotate 10s linear infinite;
+}
+
+
+
+
+.do{
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%);
+}
+.do-left{
+    display: inline-block;
+    width: 49%; 
+    vertical-align: top;
+}
+.do-right{
+    display: inline-block;
+    width: 49%;
+
+}
+.do-right img{
+    width: 100%;
+}
+.do-left p{
+    background-color: white;
+    box-shadow: 10px 10px 20px crimson ;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+
+
+.services{
+    background: linear-gradient(340.62deg, #FFFFFF 45.63%, #DB7F7E 45.64%);
+    text-align: center;
+    
+}
+.services-card{
+width: 30%;
+background-color: whitesmoke;
+border-radius: 20px;
+border: 5px solid orange;
+text-align: center;
+display: inline-block;
+margin: 15px;
+padding: 10px;
+vertical-align: top;
+}
+.services h2{
+    color: whitesmoke;
+}
+.services hr{
+    background-color: crimson;
+    height: 4px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px auto;
+}
+
+
+
+
+.why-card{
+background-color: whitesmoke;
+border-radius: 10px;
+box-shadow: 5px 5px 0px orange ;
+border: 5px solid wheat;
+padding: 20px;
+width: 50%;
+margin: 50px auto;
+}
+.why-card ul{
+    margin-left: 15px;
+    list-style: circle;
+}
+.why-card-1{
+    position: relative;
+    right: 100px;
+}
+.why-card-2{
+    position: relative;
+    left: 100px;
+}
+.why-card-3{
+    position: relative;
+    right: 100px;
+}
+.why{
+    position: relative;
+}
+.why-octogon{
+    position: absolute;
+    top:100px ;
+    left: 0  ;
+    width: 20%;
+}
+.why-cirkle{
+    position: absolute;
+    bottom: 0 ;
+    right: 0 ;
+    width: 30%;
+    
+}
+
+
+
+
+.our-card{
+    width: 49%;
+    height: 250px;
+    border: 5px solid crimson;
+    display: inline-block;
+    border-radius: 10px;
+}
+.oc-1{
+background: url(img/portfolio/site1.png)center/cover no-repeat;
+}
+.oc-2{
+background: url(img/portfolio/site2.png)center/cover no-repeat;
+}
+.oc-3{
+background: url(img/portfolio/site3.png)center/cover no-repeat;
+}
+.oc-4{
+background: url(img/portfolio/site4.png)center/cover no-repeat;
+}
+
+
+
+.text{
+    background: linear-gradient( #DB7E7E , #FFC997);;
+    text-align: center;
+}
+
+.text-a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    display: inline-block; 
+}
+
+
+@keyframes rotate{
+    0%{
+       transform: rotate(0); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes transform{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(250px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes up{
+    0%{
+        transform: translate(0,0px);
+    }
+    50%{
+        transform: translate(0px,150px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes down{
+    0%{
+        transform: translate(0,0px);
+    }
+    50%{
+        transform: translate(0px,-130px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+
+
+@media(max-width:1200px){
+    .circle1{
+        display: none;
+    }
+    .circle2{
+        display: none;
+    }
+    .circle3{
+        display: none;
+    }
+    .circle4{
+        display: none;
+    }
+    .circle3{
+        display: none;
+    }
+    .circle4{
+        display: none;
+    }
+    .circle-bordered{
+        display: none;
+    }
+    .circle-dashed-border{
+        display: none;
+    }
+    .triangle{
+        display: none;
+    }
+    .octagon{
+        display: none;
+    }
+    
+}
+@media(max-width:1050px){
+    .services-card{
+        margin: 8px;
+        width: 28%;
+    }
+}
+
+@media(max-width:1000px){
+    .menu{
+        height: fit-content;
+    }
+    .header-content h1{
+        width: 600px;
+        font-size: 70px;
+    }
+    .about{
+        padding: 10px;
+    }
+    .why-cirkle{
+        display: none;
+    }
+    .why-octogon{
+        display: none;
+    }
+}
+@media(max-width:850px){
+    .services-card{
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+    }
+}
+@media(max-width:750px){
+    .do-left{
+        display: block;
+        margin: 10px auto;
+        width: 70%;
+    }
+    .do-right{
+        display: block;
+        margin: 10px auto;
+        width: 70%;
+        width: 70%;
+    }
+    .why-card-1{
+        position: relative;
+        right: 0px;
+        width: 70%;
+    }
+    .why-card-2{
+        position: relative;
+        left: 0px;
+        width: 70%;
+    }
+    .why-card-3{
+        position: relative;
+        width: 70%;
+        right: 0px;
+    }
+    .our-card{
+        width: 80%;
+        height: 250px;
+        border: 5px solid crimson;
+        display:block;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+}
+@media(max-width:500px){
+    .header-content h1{
+        width: 90%;
+        font-size: 45px;
+    }
+    .services-card{
+        display: block;
+        margin: 10px auto;
+        width: 70%;}
+        .our-card{
+            width: 80%;
+            height: 150px;
+            border: 5px solid crimson;
+            display:block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+}
